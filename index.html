@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<section class="contact-form">
+			<div class="contact-form__box">
+				<form
+					action="https://formsubmit.co/e7b23c132a71a868834ec829622e008a"
+					method="POST"
+				>
+					>
+					<div>
+						<label for="name"> Imię i Nazwisko:</label>
+						<input type="text" name="name" id="name" />
+					</div>
+					<div>
+						<label for="email">E-Mail:</label>
+						<input type="email" name="email" id="email" />
+					</div>
+					<div>
+						<label for="phone">Telefon:</label>
+						<input type="number" name="phone" id="phone" />
+					</div>
+					<div>
+						<label for="message">Wiadomość:</label>
+						<textarea id="message" name="message" rows="4" cols="50"></textarea>
+					</div>
+					<input type="hidden" name="_template" value="table" />
+					<input
+						id="thankYouSite"
+						type="hidden"
+						name="_next"
+						value="/ThankYouPage.html"
+					/>
+					<button type="submit">wyślij wiadomość</button>
+				</form>
+			</div>
+		</section>
+		<script src="/main.js"></script>
+	</body>
+</html>
