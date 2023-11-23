@@ -6,6 +6,7 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
+
 	<body>
 		<section class="contact-form">
 			<div class="contact-form__box">
@@ -13,22 +14,30 @@
 					action="https://formsubmit.co/e7b23c132a71a868834ec829622e008a"
 					method="POST"
 				>
-					>
 					<div>
-						<label for="name"> Imię i Nazwisko:</label>
-						<input type="text" name="name" id="name" />
+						<label for="name"> Imię i Nazwisko *</label>
+						<input type="text" name="name" id="name" required />
+						<p class="warning warning" message="Uzupełnij poprawne dane">
+							Uzupełnij poprawne dane&nbsp;
+						</p>
+						<p class="warning blank">&nbsp;</p>
 					</div>
 					<div>
-						<label for="email">E-Mail:</label>
-						<input type="email" name="email" id="email" />
+						<label for="email">E-Mail *</label>
+						<input type="email" name="email" id="email" required />
+						<p class="warning warning">
+							Wpisz poprawny e-mail abyśmy mogli odpowiedzieć
+						</p>
 					</div>
 					<div>
-						<label for="phone">Telefon:</label>
+						<label for="phone">Telefon</label>
 						<input type="number" name="phone" id="phone" />
+						<p class="warning blank">&nbsp;</p>
 					</div>
 					<div>
 						<label for="message">Wiadomość:</label>
 						<textarea id="message" name="message" rows="4" cols="50"></textarea>
+						<p class="warning blank">&nbsp;</p>
 					</div>
 					<input type="hidden" name="_template" value="table" />
 					<input
@@ -39,6 +48,7 @@
 					/>
 					<button type="submit">wyślij wiadomość</button>
 				</form>
+				* - wymagane pola
 			</div>
 		</section>
 		<script src="/main.js"></script>
